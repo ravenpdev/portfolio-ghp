@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gruber-bg: #181818;
+  --color-gruber-bg-dark: #101010;
+  --color-gruber-surface: #282828;
+  --color-gruber-surface-2: #453d41;
+  --color-gruber-border: #52494e;
+
+  --color-gruber-fg: #e4e4ef;
+  --color-gruber-fg-bright: #f4f4ff;
+
+  --color-gruber-yellow: #ffdd33;
+  --color-gruber-green: #73c936;
+  --color-gruber-blue: #96a6c8;
+  --color-gruber-quartz: #95a99f;
+  --color-gruber-purple: #9e95c7;
+  --color-gruber-brown: #cc8c3c;
+  --color-gruber-red: #f43841;
+}
