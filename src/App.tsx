@@ -1,3 +1,6 @@
+const asset = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
 type Certificate = {
   id: string;
   title: string;
@@ -11,7 +14,7 @@ const certificates: Certificate[] = [
   {
     id: "1",
     title: "NestJS The Complete Developers Guide",
-    imagePath: "/certificates/nestjs_the_complete_developers_guide.jpg",
+    imagePath: asset("certificates/nestjs_the_complete_developers_guide.jpg"),
     issuingOrg: "Udemy",
     issuingYear: 2026,
     url: "https://www.udemy.com/certificate/UC-2f69755d-5e76-416d-906e-e1c29c0f2c67",
@@ -19,7 +22,7 @@ const certificates: Certificate[] = [
   {
     id: "2",
     title: "Claude Code",
-    imagePath: "/certificates/claude-code.png",
+    imagePath: asset("certificates/claude-code.png"),
     issuingOrg: "Frontend Masteras",
     issuingYear: 2026,
     url: "https://static.frontendmasters.com/ud/c/9dfe4c7c43/ONCeVpyzkJ/claude-code-masterdev.pdf",
@@ -27,7 +30,7 @@ const certificates: Certificate[] = [
   {
     id: "3",
     title: "Fullstack App Next V6",
-    imagePath: "/certificates/fullstack-app-next-v4.pdf.png",
+    imagePath: asset("certificates/fullstack-app-next-v4.pdf.png"),
     issuingOrg: "Frontend Masteras",
     issuingYear: 2026,
     url: "https://static.frontendmasters.com/ud/c/9dfe4c7c43/JbnMcTcHST/fullstack-app-next-v4-masterdev.pdf",
@@ -35,7 +38,7 @@ const certificates: Certificate[] = [
   {
     id: "4",
     title: "TailwindCSS",
-    imagePath: "/certificates/tailwind-css-v2.pdf.png",
+    imagePath: asset("certificates/tailwind-css-v2.pdf.png"),
     issuingOrg: "Frontend Masteras",
     issuingYear: 2026,
     url: "https://static.frontendmasters.com/ud/c/9dfe4c7c43/XQKnWntAkM/tailwind-css-v2-masterdev.pdf",
@@ -43,7 +46,7 @@ const certificates: Certificate[] = [
   {
     id: "5",
     title: "Complete React V9",
-    imagePath: "/certificates/complete-react-v9.pdf.png",
+    imagePath: asset("certificates/complete-react-v9.pdf.png"),
     issuingOrg: "Frontend Masteras",
     issuingYear: 2026,
     url: "https://static.frontendmasters.com/ud/c/9dfe4c7c43/hixpadIGiV/complete-react-v9-masterdev.pdf",
@@ -51,7 +54,7 @@ const certificates: Certificate[] = [
   {
     id: "6",
     title: "Intermediate React V6",
-    imagePath: "/certificates/intermediate-react-v6.pdf.png",
+    imagePath: asset("certificates/intermediate-react-v6.pdf.png"),
     issuingOrg: "Frontend Masteras",
     issuingYear: 2026,
     url: "https://static.frontendmasters.com/ud/c/9dfe4c7c43/dVjsrZPBjd/intermediate-react-v6-masterdev.pdf",
@@ -59,7 +62,7 @@ const certificates: Certificate[] = [
   {
     id: "7",
     title: "React Typescript V3",
-    imagePath: "/certificates/react-typescript-v3.png",
+    imagePath: asset("certificates/react-typescript-v3.png"),
     issuingOrg: "Frontend Masteras",
     issuingYear: 2026,
     url: "https://static.frontendmasters.com/ud/c/9dfe4c7c43/hUofbjHgZn/react-typescript-v3-masterdev.pdf",
@@ -67,7 +70,7 @@ const certificates: Certificate[] = [
   {
     id: "8",
     title: "Javascript Hard Parts V3",
-    imagePath: "/certificates/javascript-hard-parts-v3.pdf.png",
+    imagePath: asset("certificates/javascript-hard-parts-v3.pdf.png"),
     issuingOrg: "Frontend Masteras",
     issuingYear: 2026,
     url: "https://static.frontendmasters.com/ud/c/9dfe4c7c43/KmOjonKKum/javascript-hard-parts-v3-masterdev.pdf",
@@ -75,7 +78,7 @@ const certificates: Certificate[] = [
   {
     id: "9",
     title: "Mastering Typescript",
-    imagePath: "/certificates/mastering_typescript.png",
+    imagePath: asset("certificates/mastering_typescript.png"),
     issuingOrg: "Udemy",
     issuingYear: 2026,
     url: "https://www.udemy.com/certificate/UC-c4106ebd-9ab1-4bdf-be71-b5560a101979",
@@ -83,7 +86,7 @@ const certificates: Certificate[] = [
   {
     id: "10",
     title: "SQL",
-    imagePath: "/certificates/mastering_typescript.png",
+    imagePath: asset("certificates/mastering_typescript.png"),
     issuingOrg: "Frontend Masteras",
     issuingYear: 2026,
     url: "https://static.frontendmasters.com/ud/c/9dfe4c7c43/KVDvpbMgzq/sql-masterdev.pdf",
@@ -91,7 +94,7 @@ const certificates: Certificate[] = [
   {
     id: "11",
     title: "Pro Python",
-    imagePath: "/certificates/pro-python.pdf.png",
+    imagePath: asset("certificates/pro-python.pdf.png"),
     issuingOrg: "Frontend Masteras",
     issuingYear: 2026,
     url: "https://static.frontendmasters.com/ud/c/9dfe4c7c43/rMqhOQLwOe/pro-python-masterdev.pdf",
